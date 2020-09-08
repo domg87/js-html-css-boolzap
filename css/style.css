@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+/* BACKGROUND APP*/
+
 .back {
     position: fixed;
     z-index: -1;
@@ -34,4 +36,124 @@
     margin-top: 2%;
     background-color: #fff;
 }
+
+/* BACKGROUND APP*/
+
+
+/* CLASS VARIE */
+
+.color-blue {
+    background-color: #8EDAFC;
+}
+
+/* CLASS VARIE */
+
+
+
+/* MAIN APP */
+
+.app_sx {
+    width: 40%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.app_dx {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    background-color: blue;
+}
+
+.user-chat {
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+
+.info-box {
+    display: flex;
+    height: 50px;
+    background-color: #EAEAEA;
+}
+
+.photo {
+    height: 35px;
+    border-radius: 20px;
+    margin: 10px 10px;
+}
+
+.icons {
+    position: relative;
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 50%;
+}
+
+.icons i {
+    margin-right: 20px;
+    font-size: 20px;
+    color: #b1b1b1;
+}
+
+
+.ring-icon i {
+    align-items: center;
+    margin: 5px 10px;
+    height: 40px;
+    width: 40px;
+    padding: 9px;
+    color: #8EDAFC;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.main_user {
+    width: 100%;
+    align-items: center;
+}
+
+.text {
+    align-self: center;
+    width: 50%;
+    padding: 10px 0;
+    font-size: 10px;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+
+
+}
+
+.search-icon {
+    align-self: center;
+    font-size: 14px;
+    padding: 0px 10px;
+    margin-left: 10px;
+    background-color: #fff;
+    border: 1px solid #DBDBD2;
+    color: #EAEAEA;
+}
+
+input {
+    width: 300px;
+}
+
+.search-input {
+    border: none;
+    margin-left: 10px;
+}
+
+.search
+
+
+
+
+/* MAIN APP */
+
+
 
