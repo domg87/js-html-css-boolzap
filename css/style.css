@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* BACKGROUND APP*/
 
 .back {
@@ -40,19 +44,43 @@
 /* BACKGROUND APP*/
 
 
-/* CLASS VARIE */
+/* CLASS UNIX */
+.chat {
+    border-top: 1px solid #DBDBD2;
+}
+
+.center {
+    padding: 15px 0;
+}
 
 .color-blue {
     background-color: #8EDAFC;
 }
 
-/* CLASS VARIE */
+/* CLASS UNIX */
+
+
+/* TIPOGRAPHY */
+
+.name-text {
+    font-size: 13px;
+}
+
+.name h4 {
+    font-size: 10px;
+    margin-top: 1px;
+    color: #B1B1B1;
+}
+
+/* TIPOGRAPHY */
+
 
 
 
 /* MAIN APP */
 
 .app_sx {
+    overflow: auto;
     width: 40%;
     height: 100%;
     background-color: #FFFFFF;
