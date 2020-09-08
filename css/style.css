@@ -90,7 +90,8 @@ body {
     display: flex;
     width: 60%;
     height: 100%;
-    background-color: blue;
+    background-image: url(../img/mine.jpg);
+    background-position: center;
 }
 
 .user-chat {
@@ -99,8 +100,9 @@ body {
     width: 100%;
 }
 
-.info-box {
+.info-box, .info-box-header {
     display: flex;
+    width: 100%;
     height: 50px;
     background-color: #EAEAEA;
 }
@@ -176,7 +178,20 @@ input {
     margin-left: 10px;
 }
 
-.search
+.icons-header {
+    position: relative;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.icons-header i {
+    margin-right: 20px;
+    font-size: 20px;
+    color: #b1b1b1;
+}
+
+
+
 
 
 
