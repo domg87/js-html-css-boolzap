@@ -10,16 +10,25 @@ body {
 
 /* BACKGROUND APP*/
 
-.back {
+/* .back {
     position: fixed;
     z-index: -1;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100%;
+} */
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #DBDBD2;
+
 }
 
-.green {
+/* .green {
     height: 20vh;
     width: 100%;
     background-color: #009688;
@@ -29,15 +38,13 @@ body {
     height: 80vh;
     width: 100%;
     background-color: #DBDBD2;
-}
+} */
 
 
 .container {
-    display: flex;
-    height: 90vh;
-    width: 80vw;
-    margin: auto;
-    margin-top: 2%;
+    height: calc(100% - 50px);
+    width: 100%;
+    max-width: 1360px;
     background-color: #fff;
 }
 
@@ -45,16 +52,30 @@ body {
 
 
 /* CLASS UNIX */
-.chat {
-    border-top: 1px solid #DBDBD2;
+
+.list-inline {
+    display: flex;
+    list-style: none;
 }
 
-.center {
-    padding: 15px 0;
+.float-left {
+    float: left;
 }
+  
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
 
 .color-blue {
     background-color: #8EDAFC;
+}
+
+.templates {
+    display: none;
 }
 
 /* CLASS UNIX */
@@ -80,52 +101,69 @@ body {
 /* MAIN APP */
 
 .app_sx {
-    overflow: auto;
+    overflow: hidden;
     width: 40%;
     height: 100%;
     background-color: #FFFFFF;
 }
 
 .app_dx {
-    display: flex;
     width: 60%;
     height: 100%;
-    background-image: url(../img/mine.jpg);
     background-position: center;
 }
 
-.user-chat {
-    display: flex;
-    height: 50px;
-    width: 100%;
-}
 
-.info-box, .info-box-header {
+
+.header {
     display: flex;
-    width: 100%;
-    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
     background-color: #EAEAEA;
 }
 
+/* avatar */
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-img {
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
 .photo {
-    height: 35px;
-    border-radius: 20px;
-    margin: 10px 10px;
+    width: 100%;
 }
 
-.icons {
-    position: relative;
-    align-self: center;
-    margin-top: 10px;
-    margin-left: 50%;
+/* avatar */
+
+/* icone */
+
+.icons li {
+    padding: 0 10px;
+    font-size: 22px;
+    color: #B1B1B1;
 }
 
-.icons i {
-    margin-right: 20px;
-    font-size: 20px;
-    color: #b1b1b1;
-}
+/* icone */
 
+
+
+
+/* notification */
+
+.notifications {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    height: 70px;
+}
 
 .ring-icon i {
     align-items: center;
@@ -139,10 +177,8 @@ body {
     font-size: 20px;
 }
 
-.main_user {
-    width: 100%;
-    align-items: center;
-}
+
+/* notification */
 
 .text {
     align-self: center;
@@ -151,12 +187,14 @@ body {
     font-size: 10px;
 }
 
+/* search */
+
 .search {
     display: flex;
-    width: 100%;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
     background-color: #fff;
-
-
 }
 
 .search-icon {
@@ -170,33 +208,125 @@ body {
 }
 
 input {
-    width: 300px;
+    height: 100%;
+    width: 450px;
 }
 
 .search-input {
     border: none;
     margin-left: 10px;
+    line-height: 30px;
 }
 
-.icons-header {
+/* search */
+
+
+
+/* contact */
+
+.user-contact {
+    height: calc(100% - 190px);
+    overflow-y: scroll;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.contact .avatar {
+    height: 60px;
+    width: 60px;
+}
+
+.contact-name {
+    margin-bottom: 8px;
+}
+.contact-text {
+    margin-left: 15px;
+}
+
+.contact-time {
+    margin-left: auto;
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+/* contact */
+
+/* APP-DX */
+
+/* chat */
+.main-chat {
+    height: calc(100% - 140px);
+    padding: 50px;
+    overflow-y: scroll;
+    background-image: url(../img/mine.jpg);
+}
+
+#input-message {
+    width: 100%;
+    height: 100%;
+
+}
+
+.message-row {
+    display: flex;
+    margin: 10px 0;
+}
+
+.message {
     position: relative;
-    align-self: center;
-    margin-top: 10px;
+    background-color: #fff;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: 15px;
 }
 
-.icons-header i {
-    margin-right: 20px;
-    font-size: 20px;
-    color: #b1b1b1;
+.message-time {
+    position: absolute;
+    font-size: 13px;
+    bottom: 5px;
+    right: 5px;
 }
 
+.message-row.sent {
+    justify-content: flex-end;
+}
+
+.message-row.sent .message {
+    background-color: lightgreen
+}
+
+.send-message {
+    cursor: pointer;
+}
+
+/* chat */
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAEAEA;
+    height: 70px;
+    padding: 15px 0;
+}
+
+.footer-icon {
+    padding: 0 30px;
+}
+
+/* footer */
 
 
 
-
-
-
-/* MAIN APP */
+/* /APP-DX */
 
 
 

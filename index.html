@@ -9,118 +9,274 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="back">
-        <div class="green"></div>
-        <div class="gray"></div>
-    </div>
-    
-    <div class="container">
-        <aside class="app_sx">
-            <div class="main_user">
-                <div class="info-box">
-                    <img class="photo io" src="img/avatar_io.jpg" alt="">
-                    <div class="icons">
-                        <i class="fas fa-circle-notch"></i>
-                        <i class="fas fa-comment-alt"></i>
-                        <i class="fas fa-ellipsis-v"></i>
-                    </div>    
-                </div>
-                <!-- BOX BELL -->
-                <div class="user-chat ring-icon color-blue">
-                    <i class="fas fa-bell-slash"></i> 
-                    <div class="text center">
-                        <h3 class="notify-text">Ricevi notifiche di nuovi messaggi</h3>
-                        <a href="#">Attiva notifiche desktop</a>
-                    </div>
-                </div>
-                <!-- BOX BELL -->
-
-                <!-- BOX SEARCH -->
-                <div class="user-chat search">
-                    <div class="search-icon bord">
-                        <i class="fas fa-search"></i>
-                        <input class="search-input" type="text" value="" placeholder="Cerca o inizia una nuova chat">
-                    </div>
-                </div>
-                <!-- BOX SEARCH -->
-
-                <!-- BOX CHAT -->
-                <div class="chat user-chat">
-                    <img class="photo" src="img/avatar_1.jpg" alt="">
-                    <div class="name center">
-                        <h3 class="name-text">Michele</h3>
-                        <h4>Non poteva essere altrimenti</h4>
-                    </div>
-                </div>
-                <div class="chat user-chat">
-                    <img class="photo" src="img/avatar_2.jpg" alt="">
-                    <div class="name center">
-                        <h3 class="name-text">Fabio</h3>
-                        <h4>Non poteva essere altrimenti</h4>
-                    </div>
-                </div>
-                <div class="chat user-chat">
-                    <img class="photo" src="img/avatar_3.jpg" alt="">
-                    <div class="name center">
-                        <h3 class="name-text">Samuele</h3>
-                        <h4>Non poteva essere altrimenti</h4>
-                    </div>
-                </div>
-                <div class="chat user-chat">
-                    <img class="photo" src="img/avatar_4.jpg" alt="">
-                    <div class="name center">
-                        <h3 class="name-text">Alessandro B.</h3>
-                        <h4>Non poteva essere altrimenti</h4>
-                    </div>
-                </div>
-                <div class="chat user-chat">
-                    <img class="photo" src="img/avatar_5.jpg" alt="">
-                    <div class="name center">
-                        <h3 class="name-text">Alessandro L.</h3>
-                        <h4>Non poteva essere altrimenti</h4>
-                    </div>
-                </div>
-                <div class="chat user-chat">
-                    <img class="photo" src="img/avatar_6.jpg" alt="">
-                    <div class="name center">
-                        <h3 class="name-text">Claudia</h3>
-                        <h4>Non poteva essere altrimenti</h4>
-                    </div>
-                </div>
-                <div class="chat user-chat">
-                    <img class="photo" src="img/avatar_7.jpg" alt="">
-                    <div class="name center">
-                        <h3 class="name-text">Davide</h3>
-                        <h4>Non poteva essere altrimenti</h4>
-                    </div>
-                </div>
-                 <div class="chat user-chat">
-                    <img class="photo" src="img/avatar_8.jpg" alt="">
-                    <div class="name center">
-                        <h3 class="name-text">Federico</h3>
-                        <h4>Non poteva essere altrimenti</h4>
-                    </div>
-                </div>
-                <!-- BOX CHAT -->
-                
+    <!-- PAGE-WRAPPER -->
+    <div class="page-wrapper">
+        <!-- CONTAINER -->
+        <div class="container">
+            <div class="back">
+                <!-- <div class="green"></div> -->
+                <div class="gray"></div>
             </div>
-        </aside>
-        <main class="app_dx">
-            <div class="info-box-header">
-                <img class="photo io" src="img/avatar_io.jpg" alt="">
-                <div class="name center">
-                    <h3 class="name-text">Federico</h3>
-                    <h4>Non poteva essere altrimenti</h4>
-                <div class="icons-header">
-                    <i class="fas fa-circle-notch"></i>
-                    <i class="fas fa-comment-alt"></i>
-                    <i class="fas fa-ellipsis-v"></i>
-                </div>
-            </div>    
-            <div class="main-chat"></div>
-        </main>
+            <!-- BOX CHAT-SX -->
+            <div class="app_sx float-left">
+                <div class="main_user">
+                    <!-- header app-sx -->
+                    <div class="header">
+                        <!-- avatar -->
+                        <div class="avatar-img">
+                            <img class="photo" src="img/avatar_io.jpg" alt="">
+                        </div>
+                        <!-- avatar -->
+                        <!-- icons header -->
+                        <ul class="icons list-inline">
+                            <li><i class="fas fa-circle-notch"></i></li>
+                            <li><i class="fas fa-comment-alt"></i></li>
+                            <li><i class="fas fa-ellipsis-v"></i></li>
+                        </ul> 
+                        <!-- /icons header -->   
+                    </div>
+                    <!-- /header app-sx -->
 
+                    <!-- BOX BELL -->
+                    <div class="notifications ring-icon color-blue">
+                        <div class="notification-icon">
+                            <i class="fas fa-bell-slash"></i> 
+                        </div>
+                        <div class="notification-text">
+                            <h3 class="notify-text">Ricevi notifiche di nuovi messaggi</h3>
+                            <a href="#">Attiva notifiche desktop</a>
+                        </div>
+                    </div>
+                    <!-- BOX BELL -->
+
+                    <!-- BOX SEARCH -->
+                    <div class="search">
+                        <div class="search-icon bord">
+                            <i class="fas fa-search"></i>
+                            <input id="search" type="text" value="" placeholder="Cerca o inizia una nuova chat">
+                        </div>
+                    </div>
+                    <!-- BOX SEARCH -->
+
+                    <!-- BOX CONTACT -->
+                    <div class="wrapper-list-contact">
+                        <ul class="user-contact">
+                            <!-- CONTACT -->
+                            <li class="contact">
+                                <!-- CONTACT AVATAR -->
+                                <div class="avatar-img">
+                                    <img class="photo" src="img/avatar_1.jpg" alt="">
+                                </div>
+                                <!-- /CONTACT AVATAR -->
+                                <!-- CONTACT TEXT -->
+                                <div class="contact-tex">
+                                    <h3 class="name-text">Michele</h3>
+                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
+                                </div>
+                                <!-- /CONTACT TEXT -->
+                                
+                                <div class="contact-time">10:35</div>
+                            </li>
+                            <li class="contact">
+                                <!-- CONTACT AVATAR -->
+                                <div class="avatar-img">
+                                    <img class="photo" src="img/avatar_2.jpg" alt="">
+                                </div>
+                                <!-- /CONTACT AVATAR -->
+                                <!-- CONTACT TEXT -->
+                                <div class="contact-tex">
+                                    <h3 class="name-text">Fabio</h3>
+                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
+                                </div>
+                                <!-- /CONTACT TEXT -->
+                                
+                                <div class="contact-time">10:35</div>
+                            </li>
+                            <li class="contact">
+                                <!-- CONTACT AVATAR -->
+                                <div class="avatar-img">
+                                    <img class="photo" src="img/avatar_3.jpg" alt="">
+                                </div>
+                                <!-- /CONTACT AVATAR -->
+                                <!-- CONTACT TEXT -->
+                                <div class="contact-tex">
+                                    <h3 class="name-text">Samuele</h3>
+                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
+                                </div>
+                                <!-- /CONTACT TEXT -->
+                                
+                                <div class="contact-time">10:35</div>
+                            </li>
+                            <li class="contact">
+                                <!-- CONTACT AVATAR -->
+                                <div class="avatar-img">
+                                    <img class="photo" src="img/avatar_4.jpg" alt="">
+                                </div>
+                                <!-- /CONTACT AVATAR -->
+                                <!-- CONTACT TEXT -->
+                                <div class="contact-tex">
+                                    <h3 class="name-text">Alessandro B.</h3>
+                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
+                                </div>
+                                <!-- /CONTACT TEXT -->
+                                
+                                <div class="contact-time">10:35</div>
+                            </li>
+                            <li class="contact">
+                                <!-- CONTACT AVATAR -->
+                                <div class="avatar-img">
+                                    <img class="photo" src="img/avatar_5.jpg" alt="">
+                                </div>
+                                <!-- /CONTACT AVATAR -->
+                                <!-- CONTACT TEXT -->
+                                <div class="contact-tex">
+                                    <h3 class="name-text">Alessandro L.</h3>
+                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
+                                </div>
+                                <!-- /CONTACT TEXT -->
+                                
+                                <div class="contact-time">10:35</div>
+                            </li>
+                            <li class="contact">
+                                <!-- CONTACT AVATAR -->
+                                <div class="avatar-img">
+                                    <img class="photo" src="img/avatar_6.jpg" alt="">
+                                </div>
+                                <!-- /CONTACT AVATAR -->
+                                <!-- CONTACT TEXT -->
+                                <div class="contact-tex">
+                                    <h3 class="name-text">Claudia</h3>
+                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
+                                </div>
+                                <!-- /CONTACT TEXT -->
+                                
+                                <div class="contact-time">10:35</div>
+                            </li>
+                            <li class="contact">
+                                <!-- CONTACT AVATAR -->
+                                <div class="avatar-img">
+                                    <img class="photo" src="img/avatar_7.jpg" alt="">
+                                </div>
+                                <!-- /CONTACT AVATAR -->
+                                <!-- CONTACT TEXT -->
+                                <div class="contact-tex">
+                                    <h3 class="name-text">Davide</h3>
+                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
+                                </div>
+                                <!-- /CONTACT TEXT -->
+                                
+                                <div class="contact-time">10:35</div>
+                            </li>
+                            <li class="contact">
+                                <!-- CONTACT AVATAR -->
+                                <div class="avatar-img">
+                                    <img class="photo" src="img/avatar_8.jpg" alt="">
+                                </div>
+                                <!-- /CONTACT AVATAR -->
+                                <!-- CONTACT TEXT -->
+                                <div class="contact-tex">
+                                    <h3 class="name-text">Federico</h3>
+                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
+                                </div>
+                                <!-- /CONTACT TEXT -->
+                                
+                                <div class="contact-time">10:35</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /BOX CONTACT -->
+                    
+                </div>
+            </div>
+            <!-- /BOX CHAT-SX -->
+
+
+            <!-- BOX CHAT-DX -->
+            <div class="app_dx float-left">
+                <!-- HEADER APP DX-->
+                <div class="header">
+                    <!-- avatar -->
+                    <div class="avatar">
+                        <div class="avatar-img">
+                            <img class="photo" src="img/avatar_io.jpg" alt="">
+                        </div>
+                        <div class="avatar-text">
+                            <h4 class="avatar-name">Samuele</h4>
+                            <p class="avatar-last-access">Ultimo accesso oggi alle 11:00</p>
+                        </div>
+                    </div>
+                    <!-- avatar -->
+                    <!-- icons header -->
+                    <ul class="icons list-inline">
+                        <li><i class="fas fa-circle-notch"></i></li>
+                        <li><i class="fas fa-comment-alt"></i></li>
+                        <li><i class="fas fa-ellipsis-v"></i></li>
+                    </ul> 
+                    <!-- /icons header -->   
+                </div>
+                <!-- HEADER APP DX-->  
+
+                <!-- CHAT CONTAINER-->
+                <div class="main-chat wrapper-list-chat">
+                    <!-- MESSAGE -->
+                    <div class="message-row">
+                        <div class="message">
+                            <div class="message-text">Come stai?</div>
+                            <div class="message-time">11:12</div>
+                        </div>
+                    </div>
+                    <div class="message-row sent">
+                        <div class="message">
+                            <div class="message-text">Come stai?</div>
+                            <div class="message-time">11:12</div>
+                        </div>
+                    </div>
+                    <div class="message-row sent">
+                        <div class="message">
+                            <div class="message-text">Come stai?</div>
+                            <div class="message-time">11:12</div>
+                        </div>
+                    </div>
+                    <div class="message-row sent">
+                        <div class="message">
+                            <div class="message-text">Come stai?</div>
+                            <div class="message-time">11:12</div>
+                        </div>
+                    </div>
+                    <!-- /MESSAGE -->
+                </div>
+                <!-- CHAT CONTAINER-->
+
+                <!-- FOOTER APP CHAT -->
+                <div class="footer">
+                    <div class="footer-icon">
+                        <i class="far fa-smile"></i>
+                    </div>
+                    <input id="input-message" type="text" placeholder="Scrivi il messaggio">
+                    <div class="footer-icon">
+                        <i class="send-message fa fa-paper-plane" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!-- FOOTER APP CHAT -->
+            </div>
+            <!-- /BOX CHAT-DX -->
+        </div>
+        <!-- /CONTAINER -->
     </div>
+    <!-- /PAGE-WRAPPER -->
+
+    <!-- TEMPLATE -->
+    <div class="templates">
+
+        <div class="message-row">
+            <div class="message">
+                <div class="message-text"></div>
+                <div class="message-time"></div>
+            </div>
+        </div>
+    </div>
+    <!-- TEMPLATE -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </body>
