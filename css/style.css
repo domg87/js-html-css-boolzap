@@ -10,14 +10,7 @@ body {
 
 /* BACKGROUND APP*/
 
-/* .back {
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-} */
+
 
 .page-wrapper {
     display: flex;
@@ -28,17 +21,6 @@ body {
 
 }
 
-/* .green {
-    height: 20vh;
-    width: 100%;
-    background-color: #009688;
-}
-
-.gray {
-    height: 80vh;
-    width: 100%;
-    background-color: #DBDBD2;
-} */
 
 
 .container {
@@ -87,7 +69,7 @@ body {
     font-size: 13px;
 }
 
-.name h4 {
+.contact-text p {
     font-size: 10px;
     margin-top: 1px;
     color: #B1B1B1;
