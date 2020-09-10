@@ -246,10 +246,20 @@ input {
 
 /* chat */
 .main-chat {
+    display: none;
+    flex-direction: column;
     height: calc(100% - 140px);
     padding: 50px;
     overflow-y: scroll;
     background-image: url(../img/mine.jpg);
+}
+
+.main-chat.active {
+    display: flex;
+}
+
+.convers {
+    display: none;
 }
 
 #input-message {
@@ -293,6 +303,10 @@ input {
 .reply {
     align-self: flex-start;
     background-color: #fff;
+}
+
+.templates.active {
+    display: flex;
 }
 
 /* chat */
