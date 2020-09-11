@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $(".send-message").click(
+    $(".sendMessage").click(
         function() {
             sendMessage();
         }
@@ -16,69 +16,90 @@ $(document).ready(function() {
 
     $("#search").keyup(
         function() {
-
-            var searchInput = $(this).val().toLowerCase();
             
+            var searchInput = $(this).val(); 
+            searchInput = searchInput.toLowerCase();
 
-            var contactsName = $(".contact .name-text");
-            contactsName.each(
-                function() {
-                    var name = $(this).text().toLowerCase();
-                    if(name.includes(searchInput) == true) {
-                        $(this).parents(".contact").show(); 
-                    } else {
-                        $(this).parents(".contact").hide();
-                    }
-                });
+            var contactName = $(".contact .contact-name");
+
+            contactName.each(function() {
+                var name = $(this).text();
+                name = name.toLowerCase();
+
+                if(name.includes(searchInput) == true) {
+                    $(this).parents("contact").show();
+                } else {
+                    $(this).parents(".contact").hide();
+                }
+                
+            });
         }
     );
 
-
-    $(".contacts").click(
+    $(document).on("click", ".message-actions", 
         function() {
-            selectChat();
+            $(this).parents(".message-row").remove();
         }
-    )    
+    );
+
+    $(".contact").click(
+        function() {
+            $(".contact").removeClass("active");
+            $(this).addClass("active");
+
+            var datoContatto = $(this).attr("data-contatto");
+
+            $(".chat").removeClass("active");
+            $(".chat[data-conversazione="+datoContatto+"]").addClass("active");
+
+            var img = $(this).find("img").attr("src");
+            var name = $(this).find(".contact-name").text();
+            var time = $(this).find(".contact-time").text();
+
+            $(".col-right .avatar-img img").attr("src", img);
+            $(".col-right .avatar-last-access time").text(time);
+        }
+    );
 
 });
 
 
-// ---funzioni---
+
+/// FUNZIONI SCRIPT
 
 function sendMessage() {
     var inputText = $("#input-message").val();
-    
+
     if(inputText != "") {
         var templateMessage = $(".templates .message-row").clone();
 
         var time = getTime();
-        
+
         templateMessage.find(".message-text").text(inputText);
         templateMessage.find(".message-time").text(time);
         templateMessage.addClass("sent");
 
-        $(".main-chat").append(templateMessage);
+        $(".chat.active").append(templateMessage);
         setTimeout(cpuMessage, 1000);
         $("#input-message").val("");
-
+        var heightChatActive = $(".chat.active").prop("scrollHeight");
+        $(".chats-wrapper").scrollTop(heightChatActive);
     }
 }
 
-// -- creo funzione per generare risposta automatica dopo 1 secondo---
 function cpuMessage() {
     var cpuMessage = $(".templates .message-row").clone();
-    
+
     cpuMessage.find(".message-text").text("ok");
     var time = getTime();
     cpuMessage.find(".message-time").text(time);
 
-    $(".main-chat").append(cpuMessage);
-
+    $(".chat.active").append(cpuMessage);
+    var heightChatActive = $(".chat.active").prop("scrollHeight");
+    $(".chats-wrapper").scrollTop(heightChatActive);
 }
 
-
-// -- creo funzione per orario messaggio
-function getTime(){
+function getTime() {
     var date = new Date();
     var hours = date.getHours();
     var minutes = date.getMinutes();
@@ -88,48 +109,3 @@ function getTime(){
     }
     return hours + ":" + minutes;
 }
-
-// Active chat selezionata
-$(".contact").click(
-    function(){
-    $(".contact").removeClass("active");
-    $(this).addClass("active");
-    }
-);
-
-// --- collegare contatto alla chat ---
-// $(".convers").removeClass("active");
-// $(".templates").removeClass("active");
-
-// $(".contact").click(
-//     function selectChat() {
-//         var dataChat = $(this).attr("data-conversazione");
-//         if ($('.contact').hasClass("active") == true) {
-//             $('.convers').removeClass('active');
-//             $('.templates').removeClass('active');
-//         }
-//         $(this).addClass("active");
-//         $('.templates').addClass('active');
-//         $('.convers + dataChat').addClass('active');
-// });
-
-$(".contact").click(
-    function() {
-        if($(this).hasClass("active") == false) {
-            $(".contact.active").removeClass("active");
-            $(this).addClass("active");
-            console.log(active);
-
-            var utente = $(this).attr("data-chat");
-            $(".main-chat").each(function(index) {
-                var chatSelect = $(this).attr("data-conversazione");
-                if(chatSelect == utente) {
-                    if($(".main-chat").hasClass("active") == false) {
-                        $(".main-chat").addClass("active");
-                    }
-                    $(this).removeClass("active");
-                }
-            });
-        }
-    }
-)

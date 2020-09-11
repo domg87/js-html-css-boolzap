@@ -1,454 +1,538 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolzap</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <!-- PAGE-WRAPPER -->
+</head>
+<body>
+    
+    <!-- page wrapper -->
     <div class="page-wrapper">
-        <!-- CONTAINER -->
-        <div class="container">
-            <div class="back">
-                <!-- <div class="green"></div> -->
-                <div class="gray"></div>
-            </div>
-            <!-- BOX CHAT-SX -->
-            <div class="app_sx float-left">
-                <div class="main_user">
-                    <!-- header app-sx -->
-                    <div class="header">
-                        <!-- avatar -->
-                        <div class="avatar-img">
-                            <img class="photo" src="img/avatar_io.jpg" alt="">
-                        </div>
-                        <!-- avatar -->
-                        <!-- icons header -->
-                        <ul class="icons list-inline">
-                            <li><i class="fas fa-circle-notch"></i></li>
-                            <li><i class="fas fa-comment-alt"></i></li>
-                            <li><i class="fas fa-ellipsis-v"></i></li>
-                        </ul> 
-                        <!-- /icons header -->   
+        <!-- app container -->
+        <div class="container clearfix">
+            <!-- col left -->
+            <div class="col-left float-left">
+                <!-- header col left -->
+                <div class="header-left">
+                    <!-- avatar -->
+                    <div class="avatar-img">
+                        <img src="img/avatar_io.jpg" alt="">
                     </div>
-                    <!-- /header app-sx -->
-
-                    <!-- BOX BELL -->
-                    <div class="notifications ring-icon color-blue">
+                    <!-- /avatar -->
+                    <ul class="icons list-inline">
+                        <li><i class="fas fa-circle-notch"></i></li>
+                        <li><i class="fas fa-comment-alt"></i></li>
+                        <li><i class="fas fa-ellipsis-v"></i></li>
+                    </ul>
+                    <!-- /icons header -->
+                    <!-- icons header -->
+                </div>
+                <!-- /header col left -->
+                <!-- notifications -->
+                <div class="notifications">
+                    <div class="notifications">
                         <div class="notification-icon">
-                            <i class="fas fa-bell-slash"></i> 
+                            <i class="fa fa-bell-slash" aria-hidden="true"></i>
                         </div>
                         <div class="notification-text">
-                            <h3 class="notify-text">Ricevi notifiche di nuovi messaggi</h3>
+                            <h3>Ricevi notifiche di nuovi messaggi</h3>
                             <a href="#">Attiva notifiche desktop</a>
                         </div>
                     </div>
-                    <!-- BOX BELL -->
-
-                    <!-- BOX SEARCH -->
-                    <div class="search">
-                        <div class="search-icon bord">
-                            <i class="fas fa-search"></i>
-                            <input id="search" type="text" value="" placeholder="Cerca o inizia una nuova chat">
-                        </div>
-                    </div>
-                    <!-- BOX SEARCH -->
-
-                    <!-- BOX CONTACT -->
-                    <div class="wrapper-list-contact">
-                        <ul class="user-contact">
-                            <!-- CONTACT -->
-                            <li class="contact active" data-conversazione="0">
-                                <!-- CONTACT AVATAR -->
-                                <div class="avatar-img">
-                                    <img class="photo" src="img/avatar_1.jpg" alt="">
-                                </div>
-                                <!-- /CONTACT AVATAR -->
-                                <!-- CONTACT TEXT -->
-                                <div class="contact-text">
-                                    <h3 class="name-text">Michele</h3>
-                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
-                                </div>
-                                <!-- /CONTACT TEXT -->
-                                
-                                <div class="contact-time">10:35</div>
-                            </li>
-                            <li class="contact" data-conversazione="1">
-                                <!-- CONTACT AVATAR -->
-                                <div class="avatar-img">
-                                    <img class="photo" src="img/avatar_2.jpg" alt="">
-                                </div>
-                                <!-- /CONTACT AVATAR -->
-                                <!-- CONTACT TEXT -->
-                                <div class="contact-text">
-                                    <h3 class="name-text">Fabio</h3>
-                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
-                                </div>
-                                <!-- /CONTACT TEXT -->
-                                
-                                <div class="contact-time">10:35</div>
-                            </li>
-                            <li class="contact" data-conversazione="2">
-                                <!-- CONTACT AVATAR -->
-                                <div class="avatar-img">
-                                    <img class="photo" src="img/avatar_3.jpg" alt="">
-                                </div>
-                                <!-- /CONTACT AVATAR -->
-                                <!-- CONTACT TEXT -->
-                                <div class="contact-text">
-                                    <h3 class="name-text">Samuele</h3>
-                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
-                                </div>
-                                <!-- /CONTACT TEXT -->
-                                
-                                <div class="contact-time">10:35</div>
-                            </li>
-                            <li class="contact" data-conversazione="3">
-                                <!-- CONTACT AVATAR -->
-                                <div class="avatar-img">
-                                    <img class="photo" src="img/avatar_4.jpg" alt="">
-                                </div>
-                                <!-- /CONTACT AVATAR -->
-                                <!-- CONTACT TEXT -->
-                                <div class="contact-text">
-                                    <h3 class="name-text">Alessandro B.</h3>
-                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
-                                </div>
-                                <!-- /CONTACT TEXT -->
-                                
-                                <div class="contact-time">10:35</div>
-                            </li>
-                            <li class="contact" data-conversazione="4">
-                                <!-- CONTACT AVATAR -->
-                                <div class="avatar-img">
-                                    <img class="photo" src="img/avatar_5.jpg" alt="">
-                                </div>
-                                <!-- /CONTACT AVATAR -->
-                                <!-- CONTACT TEXT -->
-                                <div class="contact-text">
-                                    <h3 class="name-text">Alessandro L.</h3>
-                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
-                                </div>
-                                <!-- /CONTACT TEXT -->
-                                
-                                <div class="contact-time">10:35</div>
-                            </li>
-                            <li class="contact" data-conversazione="5">
-                                <!-- CONTACT AVATAR -->
-                                <div class="avatar-img">
-                                    <img class="photo" src="img/avatar_6.jpg" alt="">
-                                </div>
-                                <!-- /CONTACT AVATAR -->
-                                <!-- CONTACT TEXT -->
-                                <div class="contact-text">
-                                    <h3 class="name-text">Claudia</h3>
-                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
-                                </div>
-                                <!-- /CONTACT TEXT -->
-                                
-                                <div class="contact-time">10:35</div>
-                            </li>
-                            <li class="contact" data-conversazione="6">
-                                <!-- CONTACT AVATAR -->
-                                <div class="avatar-img">
-                                    <img class="photo" src="img/avatar_7.jpg" alt="">
-                                </div>
-                                <!-- /CONTACT AVATAR -->
-                                <!-- CONTACT TEXT -->
-                                <div class="contact-text">
-                                    <h3 class="name-text">Davide</h3>
-                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
-                                </div>
-                                <!-- /CONTACT TEXT -->
-                                
-                                <div class="contact-time">10:35</div>
-                            </li>
-                            <li class="contact" data-conversazione="7">
-                                <!-- CONTACT AVATAR -->
-                                <div class="avatar-img">
-                                    <img class="photo" src="img/avatar_8.jpg" alt="">
-                                </div>
-                                <!-- /CONTACT AVATAR -->
-                                <!-- CONTACT TEXT -->
-                                <div class="contact-text">
-                                    <h3 class="name-text">Federico</h3>
-                                    <p class="contact-last-message">Non poteva essere altrimenti</p>
-                                </div>
-                                <!-- /CONTACT TEXT -->
-                                
-                                <div class="contact-time">10:35</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /BOX CONTACT -->
-                    
                 </div>
-            </div>
-            <!-- /BOX CHAT-SX -->
+                <!-- /notifications -->
+                <!-- search -->
+                <div class="search">
+                    <div class="search">
+                        <label class="search-label" for="search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </label>
+                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    </div>
+                </div>
+                <!-- /search -->
 
-
-            <!-- BOX CHAT-DX -->
-            <div class="app_dx float-left">
-                <!-- HEADER APP DX-->
-                <div class="header">
-                    <!-- avatar -->
-                    <div class="avatar convers" data-chat="0">
+                <!-- contacts -->
+                <ul class="contacts">
+                    <!-- contact -->
+                    <li class="contact active" data-contatto="0">
+                        <!-- contact avatar -->
                         <div class="avatar-img">
-                            <img class="photo active" src="img/avatar_1.jpg" alt="Michele" data-chat="0">
-                            <img class="photo" src="img/avatar_2.jpg" alt="Fabio" data-chat="1">
-                            <img class="photo" src="img/avatar_3.jpg" alt="Samuele" data-chat="2">
-                            <img class="photo" src="img/avatar_4.jpg" alt="Alessandro B." data-chat="3">
-                            <img class="photo" src="img/avatar_5.jpg" alt="Alessandro L." data-chat="4">
-                            <img class="photo" src="img/avatar_6.jpg" alt="Claudia" data-chat="5">
-                            <img class="photo" src="img/avatar_7.jpg" alt="Davide" data-chat="6">
-                            <img class="photo" src="img/avatar_8.jpg" alt="Federico" data-chat="7">
+                          <img src="img/avatar_1.jpg" alt="">
+                        </div>
+                        <!-- /contact avatar -->
+                        <!-- contact text -->
+                        <div class="contact-text">
+                          <h4 class="contact-name">Michele</h4>
+                          <p class="contact-last-message">Non poteva essere altrimenti</p>
+                        </div>
+                        <!-- /contact text -->
+                        <!-- contact avatar -->
+          
+                        <div class="contact-time">10:35</div>
+                      </li>
+                    <!-- /contact -->
+                     <!-- contact -->
+                    <li class="contact" data-contatto="1">
+                        <!-- contact avatar -->
+                        <div class="avatar-img">
+                        <img src="img/avatar_2.jpg" alt="">
+                        </div>
+                        <!-- /contact avatar -->
+                        <!-- contact text -->
+                        <div class="contact-text">
+                        <h4 class="contact-name">Fabio</h4>
+                        <p class="contact-last-message">Non poteva essere altrimenti</p>
+                        </div>
+                        <!-- /contact text -->
+                        <!-- contact avatar -->
+        
+                        <div class="contact-time">11:00</div>
+                    </li>
+                    <!-- /contact -->
+                     <!-- contact -->
+                    <li class="contact" data-contatto="2">
+                        <!-- contact avatar -->
+                        <div class="avatar-img">
+                        <img src="img/avatar_3.jpg" alt="">
+                        </div>
+                        <!-- /contact avatar -->
+                        <!-- contact text -->
+                        <div class="contact-text">
+                        <h4 class="contact-name">Samuele</h4>
+                        <p class="contact-last-message">Non poteva essere altrimenti</p>
+                        </div>
+                        <!-- /contact text -->
+                        <!-- contact avatar -->
+        
+                        <div class="contact-time">18:35</div>
+                    </li>
+                    <!-- /contact -->
+                    <!-- contact -->
+                    <li class="contact" data-contatto="3">
+                        <!-- contact avatar -->
+                        <div class="avatar-img">
+                        <img src="img/avatar_4.jpg" alt="">
+                        </div>
+                        <!-- /contact avatar -->
+                        <!-- contact text -->
+                        <div class="contact-text">
+                        <h4 class="contact-name">Alessandro B.</h4>
+                        <p class="contact-last-message">Non poteva essere altrimenti</p>
+                        </div>
+                        <!-- /contact text -->
+                        <!-- contact avatar -->
+        
+                        <div class="contact-time">13:02</div>
+                    </li>
+                    <!-- /contact -->
+                    <!-- contact -->
+                    <li class="contact" data-contatto="4">
+                        <!-- contact avatar -->
+                        <div class="avatar-img">
+                        <img src="img/avatar_5.jpg" alt="">
+                        </div>
+                        <!-- /contact avatar -->
+                        <!-- contact text -->
+                        <div class="contact-text">
+                        <h4 class="contact-name">Alessandro L.</h4>
+                        <p class="contact-last-message">Non poteva essere altrimenti</p>
+                        </div>
+                        <!-- /contact text -->
+                        <!-- contact avatar -->
+        
+                        <div class="contact-time">07:35</div>
+                    </li>
+                    <!-- /contact -->
+                     <!-- contact -->
+                    <li class="contact" data-contatto="5">
+                        <!-- contact avatar -->
+                        <div class="avatar-img">
+                        <img src="img/avatar_6.jpg" alt="">
+                        </div>
+                        <!-- /contact avatar -->
+                        <!-- contact text -->
+                        <div class="contact-text">
+                        <h4 class="contact-name">Claudia</h4>
+                        <p class="contact-last-message">Non poteva essere altrimenti</p>
+                        </div>
+                        <!-- /contact text -->
+                        <!-- contact avatar -->
+        
+                        <div class="contact-time">22:35</div>
+                    </li>
+                    <!-- /contact -->
+                     <!-- contact -->
+                    <li class="contact" data-contatto="6">
+                        <!-- contact avatar -->
+                        <div class="avatar-img">
+                        <img src="img/avatar_7.jpg" alt="">
+                        </div>
+                        <!-- /contact avatar -->
+                        <!-- contact text -->
+                        <div class="contact-text">
+                        <h4 class="contact-name">Davide</h4>
+                        <p class="contact-last-message">Non poteva essere altrimenti</p>
+                        </div>
+                        <!-- /contact text -->
+                        <!-- contact avatar -->
+        
+                        <div class="contact-time">22:35</div>
+                    </li>
+                    <!-- /contact -->
+                     <!-- contact -->
+                    <li class="contact" data-contatto="7">
+                        <!-- contact avatar -->
+                        <div class="avatar-img">
+                        <img src="img/avatar_8.jpg" alt="">
+                        </div>
+                        <!-- /contact avatar -->
+                        <!-- contact text -->
+                        <div class="contact-text">
+                        <h4 class="contact-name">Federico</h4>
+                        <p class="contact-last-message">Non poteva essere altrimenti</p>
+                        </div>
+                        <!-- /contact text -->
+                        <!-- contact avatar -->
+        
+                        <div class="contact-time">22:35</div>
+                    </li>
+                    <!-- /contact -->
+                </ul>
+                <!-- /contacts -->
+            </div>
+            <!-- /col left -->
+
+            <!-- col rigth -->
+            <div class="col-right float-left">
+                <!-- header col right -->
+                <div class="header-right">
+                    <!-- avatar -->
+                    <div class="avatar">
+                        <div class="avatar-img">
+                            <img src="img/avatar_1.jpg" alt="Immagine Avatar">
                         </div>
                         <div class="avatar-text">
                             <h4 class="avatar-name">Michele</h4>
-                            <p class="avatar-last-access">Ultimo accesso oggi alle 11:00</p>
+                            <p class="avatar-last-access">Ultimo accesso oggi alle <time>10:35</time></p>
                         </div>
                     </div>
-                    <div class="avatar convers" data-chat="1">
-                        <div class="avatar-img">
-                            <img class="photo" src="img/avatar_2.jpg" alt="">
-                        </div>
-                        <div class="avatar-text">
-                            <h4 class="avatar-name">Fabio</h4>
-                            <p class="avatar-last-access">Ultimo accesso oggi alle 11:00</p>
-                        </div>
-                    </div>
-                    <div class="avatar convers" data-chat="2">
-                        <div class="avatar-img">
-                            <img class="photo" src="img/avatar_3.jpg" alt="">
-                        </div>
-                        <div class="avatar-text">
-                            <h4 class="avatar-name">Samuele</h4>
-                            <p class="avatar-last-access">Ultimo accesso oggi alle 11:00</p>
-                        </div>
-                    </div>
-                    <div class="avatar convers" data-chat="3">
-                        <div class="avatar-img">
-                            <img class="photo" src="img/avatar_4.jpg" alt="">
-                        </div>
-                        <div class="avatar-text">
-                            <h4 class="avatar-name">Alessandro B.</h4>
-                            <p class="avatar-last-access">Ultimo accesso oggi alle 11:00</p>
-                        </div>
-                    </div>
-                    <div class="avatar convers" data-chat="4">
-                        <div class="avatar-img">
-                            <img class="photo" src="img/avatar_5.jpg" alt="">
-                        </div>
-                        <div class="avatar-text">
-                            <h4 class="avatar-name">Alessandro L.</h4>
-                            <p class="avatar-last-access">Ultimo accesso oggi alle 11:00</p>
-                        </div>
-                    </div>
-                    <div class="avatar convers" data-chat="5">
-                        <div class="avatar-img">
-                            <img class="photo" src="img/avatar_6.jpg" alt="">
-                        </div>
-                        <div class="avatar-text">
-                            <h4 class="avatar-name">Claudia</h4>
-                            <p class="avatar-last-access">Ultimo accesso oggi alle 11:00</p>
-                        </div>
-                    </div>
-                    <div class="avatar convers" data-chat="6">
-                        <div class="avatar-img">
-                            <img class="photo" src="img/avatar_7.jpg" alt="">
-                        </div>
-                        <div class="avatar-text">
-                            <h4 class="avatar-name">Davide</h4>
-                            <p class="avatar-last-access">Ultimo accesso oggi alle 11:00</p>
-                        </div>
-                    </div>
-                    <div class="avatar convers" data-chat="7">
-                        <div class="avatar-img">
-                            <img class="photo" src="img/avatar_8.jpg" alt="">
-                        </div>
-                        <div class="avatar-text">
-                            <h4 class="avatar-name">Federico</h4>
-                            <p class="avatar-last-access">Ultimo accesso oggi alle 11:00</p>
-                        </div>
-                    </div>
-                    <!-- avatar -->
+                    <!-- /avatar -->
                     <!-- icons header -->
                     <ul class="icons list-inline">
-                        <li><i class="fas fa-search"></i></li>
-                        <li><i class="fas fa-paperclip"></i></li>
-                        <li><i class="fas fa-ellipsis-v"></i></li>
-                    </ul> 
-                    <!-- /icons header -->   
+                      <li><i class="fas fa-circle-notch"></i></li>
+                      <li><i class="fas fa-comment-alt"></i></li>
+                      <li><i class="fas fa-ellipsis-v"></i></li>
+                    </ul>
+                    <!-- /icons header -->
                 </div>
-                <!-- HEADER APP DX-->  
+                <!-- /header col right -->
 
-                <!-- CHAT CONTAINER MESSAGE-->
-                <div class="main-chat active" data-chat="0">
-                    <!-- MESSAGE -->
-                    <div class="message-row">
-                        <div class="message reply">
-                            <div class="message-text">We Juaglio`</div>
-                            <div class="message-time">11:12</div>
+                <!-- chats-wrapper col right -->
+                <div class="chats-wrapper">
+                    <!-- chat container -->
+                    <div class="chat active" data-conversazione="0">
+                        <!-- message -->
+                        <div class="message-row">
+                            <div class="message">
+                              <i class="fa fa-chevron-down f-right message-options"></i>
+                              <div class="message-text">Come stai?</div>
+                              <div class="message-time">11:05</div>
+                              <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                              </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="message-row sent">
-                        <div class="message">
-                            <div class="message-text">Come stai?</div>
-                            <div class="message-time">11:12</div>
+                        <!-- /message -->
+                        <!-- message -->
+                        <div class="message-row sent">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Come stai?</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
                         </div>
+                        <!-- /message -->
+                        <!-- message -->
+                        <div class="message-row sent">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
                     </div>
-                    <!-- /MESSAGE -->
+                    <!-- /chat container -->
+                    <!-- chat container -->
+                    <div class="chat active" data-conversazione="1">
+                        <!-- message -->
+                        <div class="message-row">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Come stai?</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                        <!-- message -->
+                        <div class="message-row sent">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Come stai?</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                        <!-- message -->
+                        <div class="message-row sent">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                    </div>
+                    <!-- /chat container -->
+                    <!-- chat container -->
+                    <div class="chat active" data-conversazione="2">
+                        <!-- message -->
+                        <div class="message-row">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Come stai?</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                        <!-- message -->
+                        <div class="message-row sent">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Come stai?</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                        <!-- message -->
+                        <div class="message-row sent">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                    </div>
+                    <!-- /chat container -->
+                    <!-- chat container -->
+                    <div class="chat active" data-conversazione="3">
+                        <!-- message -->
+                        <div class="message-row">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Come stai?</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                        <!-- message -->
+                        <div class="message-row sent">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Come stai?</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                        <!-- message -->
+                        <div class="message-row sent">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                    </div>
+                    <!-- /chat container -->
+                    <!-- chat container -->
+                    <div class="chat active" data-conversazione="4">
+                        <!-- message -->
+                        <div class="message-row">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Come stai?</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                        <!-- message -->
+                        <div class="message-row sent">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Come stai?</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                        <!-- message -->
+                        <div class="message-row sent">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                    </div>
+                    <!-- /chat container -->
+                    <!-- chat container -->
+                    <div class="chat active" data-conversazione="5">
+                        <!-- message -->
+                        <div class="message-row">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Come stai?</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                        <!-- message -->
+                        <div class="message-row sent">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Come stai?</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                        <!-- message -->
+                        <div class="message-row sent">
+                            <div class="message">
+                                <i class="fa fa-chevron-down f-right message-options"></i>
+                                <div class="message-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="message-time">11:05</div>
+                                <ul class="message-actions">
+                                    <li>Info Messaggio</li>
+                                    <li class="delete-message">Cancella Messaggio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /message -->
+                    </div>
+                    <!-- /chat container -->
                 </div>
-                <div class="main-chat" data-chat="1">
-                    <!-- MESSAGE -->
-                    <div class="message-row">
-                        <div class="message reply">
-                            <div class="message-text">We Juaglio`</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <div class="message-row sent">
-                        <div class="message">
-                            <div class="message-text">Come stai?</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <!-- /MESSAGE -->
-                </div>
-                <div class="main-chat" data-chat="2">
-                    <!-- MESSAGE -->
-                    <div class="message-row">
-                        <div class="message reply">
-                            <div class="message-text">We Juaglio`</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <div class="message-row sent">
-                        <div class="message">
-                            <div class="message-text">Come stai?</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <!-- /MESSAGE -->
-                </div>
-                <div class="main-chat" data-chat="3">
-                    <!-- MESSAGE -->
-                    <div class="message-row">
-                        <div class="message reply">
-                            <div class="message-text">We Juaglio`</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <div class="message-row sent">
-                        <div class="message">
-                            <div class="message-text">Come stai?</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <!-- /MESSAGE -->
-                </div>
-                <div class="main-chat" data-chat="4">
-                    <!-- MESSAGE -->
-                    <div class="message-row">
-                        <div class="message reply">
-                            <div class="message-text">We Juaglio`</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <div class="message-row sent">
-                        <div class="message">
-                            <div class="message-text">Come stai?</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <!-- /MESSAGE -->
-                </div>
-                <div class="main-chat" data-chat="5">
-                    <!-- MESSAGE -->
-                    <div class="message-row">
-                        <div class="message reply">
-                            <div class="message-text">We Juaglio`</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <div class="message-row sent">
-                        <div class="message">
-                            <div class="message-text">Come stai?</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <!-- /MESSAGE -->
-                </div>
-                <div class="main-chat" data-chat="6">
-                    <!-- MESSAGE -->
-                    <div class="message-row">
-                        <div class="message reply">
-                            <div class="message-text">We Juaglio`</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <div class="message-row sent">
-                        <div class="message">
-                            <div class="message-text">Come stai?</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <!-- /MESSAGE -->
-                </div>
-                <div class="main-chat" data-chat="7">
-                    <!-- MESSAGE -->
-                    <div class="message-row">
-                        <div class="message reply">
-                            <div class="message-text">We Juaglio`</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <div class="message-row sent">
-                        <div class="message">
-                            <div class="message-text">Come stai?</div>
-                            <div class="message-time">11:12</div>
-                        </div>
-                    </div>
-                    <!-- /MESSAGE -->
-                </div>
-                <!-- CHAT CONTAINER-->
-
-                <!-- FOOTER APP CHAT -->
+                <!-- /chats-wrapper -->
+                
+                <!-- footer col rigth -->
                 <div class="footer">
                     <div class="footer-icon">
-                        <i class="far fa-smile"></i>
+                        <i class="far fa-smile" aria-hidden="true"></i>
                     </div>
-                    <input id="send-message" type="text" placeholder="Scrivi il messaggio">
+                    <input id="input-message" type="text" placeholder="Scrivi il messaggio">
                     <div class="footer-icon">
                         <i class="send-message fa fa-paper-plane" aria-hidden="true"></i>
                     </div>
                 </div>
-                <!-- FOOTER APP CHAT -->
+                <!-- /footer col rigth -->
             </div>
-            <!-- /BOX CHAT-DX -->
+            <!-- /col rigth -->
         </div>
-        <!-- /CONTAINER -->
+        <!-- /app container -->
     </div>
-    <!-- /PAGE-WRAPPER -->
+    <!-- page wrapper -->
 
-    <!-- TEMPLATE -->
+
+    <!-- templates -->
     <div class="templates">
 
         <div class="message-row">
             <div class="message">
-                <div class="message-text"></div>
-                <div class="message-time"></div>
+                <i class="fa fa-chevron-down f-right message-options"></i>
+            <div class="message-text"></div>
+            <div class="message-time"></div>
+            <ul class="message-actions">
+                <li>Info Messaggio</li>
+                <li class="delete-message">Cancella Messaggio</li>
+            </ul>
             </div>
         </div>
+    
     </div>
-    <!-- TEMPLATE -->
-
+    <!-- /templates -->
+      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <!-- <script src="js/test.js"></script> -->
-  </body>
+</body>
 </html>
